@@ -1,0 +1,40 @@
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  max-height: 150px;
+  font-family: "Poiret One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: $white;
+  padding: 20px;
+  max-width: 100%;
+  @media screen and (max-width: 768px) {
+    padding: 0;
+    flex-direction: column;
+  }
+}
+.footer-container__logo {
+  max-width: 130px;
+}
+.footer-container__adress {
+  font-size: 2.5rem;
+  color: $yellow;
+}
+.footer-container__contact-img {
+  padding: 10px;
+  max-width: 50px;
+}
+
+.footer-container__contact-img:hover {
+  color: beige;
+  transform: rotate(20deg);
+}
+
+.footer-container__link {
+  color: $yellow;
+  font-size: 1.5em;
+}

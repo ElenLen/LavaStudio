@@ -1,0 +1,252 @@
+.section-contacts{
+    @extend %container;
+    margin-top: 32px;
+}
+.section-contacts__conteiner{
+    display: grid;
+    color: $yellow;
+    margin-bottom: 9%;
+    row-gap: 20px;
+
+}
+.section-contacts__title{
+    margin: auto;
+    font-size: 4.6em;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+    background: linear-gradient(45deg, #ffdc12 33%, #ad10d3 66%, #fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media screen and (max-width: 768px) {
+        font-size: 4em;
+        line-height: 44px;
+    }
+    
+    @media screen and (max-width: 376px) {
+        font-size: 2.4em;
+        line-height: 28px;
+    }
+}
+.section-contacts__subtitle {
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 0;
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.8em;
+        line-height: 32px;
+    }
+    
+    @media screen and (max-width: 376px) {
+        font-size: 1.4em;
+        line-height: 28px;
+    }
+
+}
+.section-contacts__contacts{
+    display: grid;
+    grid-template-columns: repeat(6,100px);
+    justify-content: center;
+    gap: 3%;
+    font-size: 1.9em;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 3%;
+    color: $yellow;
+
+    @media screen and (max-width: 1024px) {
+        gap: 2%;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.7em;
+        line-height: 32px;
+    }
+
+    @media screen and (max-width: 666px) {
+        grid-template-columns: repeat(3,90px);
+        gap: 3%;
+    }
+
+    @media screen and (max-width: 426px) {
+        font-size: 1.4em;
+        gap: 1%;
+        grid-template-columns: repeat(3,80px);
+    }
+
+    @media screen and (max-width: 376px) {
+        gap: 0;
+    }
+
+    @media screen and (max-width: 320px) {
+        font-size: 1.3em;
+    }
+}
+.section-contacts__logo{
+    width: 60px;
+
+    @media screen and (max-width: 1024px) {
+        width: 55px;
+        font-size: 1.7em;
+    }
+    
+    @media screen and (max-width: 768px) {
+        width: 55px;
+    }
+
+    @media screen and (max-width: 426px) {
+        width: 50px;
+    }
+
+    @media screen and (max-width: 320px) {
+        width: 45px;
+    }
+
+}
+.section-contacts__logo:hover{
+    transform: scale(1.2);
+}
+    
+.section-contacts__map-conteiner{
+    display: flex;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 44px;
+    color: $yellow;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.8em;
+        line-height: 32px;
+    }
+    
+    @media screen and (max-width: 376px) {
+        font-size: 1.4em;
+        line-height: 28px;
+    }
+
+    @media screen and (max-width: 320px) {
+        font-size: 1.3em;
+        line-height: 28px;
+    }
+}
+.section-contacts__map-conteiner__paragraph{
+    text-align: start;
+    margin-bottom: 0;
+}
+.section-contacts__map{
+    width: 1000px;
+    height: 300px;
+    margin: auto;
+
+    @media screen and (max-width: 1024px) {
+        width: 800px;
+    }
+
+    
+    @media screen and (max-width: 860px) {
+        width: 700px;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 600px;
+    }
+
+    @media screen and (max-width: 666px) {
+        width: 500px;
+    }
+
+    @media screen and (max-width: 575px) {
+        width: 450px;
+    }
+
+    
+    @media screen and (max-width: 500px) {
+        width: 380px;
+    }
+
+    @media screen and (max-width: 426px) {
+        width: 330px;
+        height: 200px;
+    }
+
+    @media screen and (max-width: 375px) {
+        width: 300px;
+        height: 200px;
+    }
+
+    @media screen and (max-width: 320px) {
+        width: 280px;
+        height: 200px;
+    }
+}
+
+.section-contacts__watsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    cursor: pointer;
+    @media screen and (max-width: 375px) {
+        right:10px;
+        bottom:20px;
+    }
+  }
+  [data-title]::after {
+      content: attr(data-title);
+      position:absolute;
+      bottom:60px;
+      left:-100px;
+      font-size: 2em;
+      font-weight: 400;
+      line-height: 44px;
+      letter-spacing: -1.6px;
+      color: $yellow-dark; 
+      background-color: #380a4de3;
+      border: 1px solid $yellow-dark;
+      min-block-size: max-content;
+      opacity:0;
+      transition: 0.5s;
+      pointer-events: none; 
+      padding: 0.5em; 
+      @media screen and (max-width: 768px) {
+          font-size: 1.8em;
+          line-height: 32px;
+      }
+      @media screen and (max-width: 375px) {
+          bottom:50px;
+          left:-30px;
+          font-size: 1em;
+          line-height: 28px;
+          letter-spacing: -1px;
+      }
+  }
+  [data-title]:hover::after {
+      opacity: 1; 
+  }
+  .section-contacts__watsapp-img {
+      width:50px;
+      height:50px;
+      @media screen and (max-width: 375px) {
+          width:40px;
+          height:40px;
+      }
+  }
+
+  .section-contacts__scroll-top-btn {
+    position: fixed;
+    left: 20px;
+    bottom: 100px;
+    cursor: pointer;
+
+    @media screen and (max-width: 375px) {
+      right:10px;
+      bottom:20px;
+    }
+  }
