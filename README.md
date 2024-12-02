@@ -26,3 +26,6 @@ Veggieboost implemented on Sass preprocessor. In the project were used the follo
 The project has animation for hovering the cursor over buttons and product cards.
 
 Also it has working navigation through page sections.
+
+
+[![Contributors](https://contrib.rocks/image?repo=ElenLen/LavaStudio)](https://github.com/ElenLen/LavaStudio/graphs/contributors)
